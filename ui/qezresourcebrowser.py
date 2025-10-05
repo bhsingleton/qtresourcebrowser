@@ -220,6 +220,7 @@ class QEzResourceBrowser(qsingletonwindow.QSingletonWindow):
 
         if clipman is not None:
 
+            clipman.init()
             clipman.set(self.currentItem().text())
 
         else:
