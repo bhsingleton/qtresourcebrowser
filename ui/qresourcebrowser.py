@@ -71,7 +71,7 @@ class QResourceBrowser(qsingletonwindow.QSingletonWindow):
 
         # Initialize main window
         #
-        self.setWindowTitle("|| Ez'Resource-Browser")
+        self.setWindowTitle("|| Qt Resource-Browser")
         self.setMinimumSize(QtCore.QSize(350, 450))
 
         # Initialize central widget
