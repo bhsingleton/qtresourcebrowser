@@ -13,9 +13,9 @@ log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 
 
-class QEzResourceBrowser(qsingletonwindow.QSingletonWindow):
+class QResourceBrowser(qsingletonwindow.QSingletonWindow):
     """
-    Overload of `QSingletonWindow` that can browse through resource icons.
+    Overload of `QSingletonWindow` that can browse through Qt resource icons.
     """
 
     # region Dunderscores
@@ -30,12 +30,12 @@ class QEzResourceBrowser(qsingletonwindow.QSingletonWindow):
 
         # Call parent method
         #
-        super(QEzResourceBrowser, self).__init__(*args, **kwargs)
+        super(QResourceBrowser, self).__init__(*args, **kwargs)
 
         # Declare public variables
         #
-        self.searchLineEdit = None
-        self.resourceTableView = None
+        self.searchLineEdit = None  # type: QtWidgets.QLineEdit
+        self.resourceTableView = None  # type: QtWidgets.QTableView
         self.resourceItemModel = None  # type: QtGui.QStandardItemModel
         self.resourceItemFilterModel = None  # type: QtCore.QSortFilterProxyModel
 
@@ -52,7 +52,7 @@ class QEzResourceBrowser(qsingletonwindow.QSingletonWindow):
 
         # Call parent method
         #
-        super(QEzResourceBrowser, self).__post_init__(*args, **kwargs)
+        super(QResourceBrowser, self).__post_init__(*args, **kwargs)
 
         # Invalidate user interface
         #
@@ -67,7 +67,7 @@ class QEzResourceBrowser(qsingletonwindow.QSingletonWindow):
 
         # Call parent method
         #
-        super(QEzResourceBrowser, self).__setup_ui__(*args, **kwargs)
+        super(QResourceBrowser, self).__setup_ui__(*args, **kwargs)
 
         # Initialize main window
         #
