@@ -1,6 +1,6 @@
 import os
 
-from Qt import QtCore, QtGui
+from dcc.vendor.Qt import QtCore, QtGui
 
 import logging
 logging.basicConfig()

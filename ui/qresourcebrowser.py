@@ -1,8 +1,8 @@
 import os
 
-from Qt import QtCore, QtWidgets, QtGui
 from dcc.ui import qsingletonwindow
 from dcc.python import importutils
+from dcc.vendor.Qt import QtCore, QtWidgets, QtGui
 from ..libs import resourceutils
 
 clipman = importutils.tryImport('clipman')
