@@ -20,7 +20,7 @@ def iterIcons():
 
     # Iterate through resource paths
     #
-    iterDirs = QtCore.QDirIterator(":", QtCore.QDirIterator.Subdirectories)
+    iterDirs = QtCore.QDirIterator(':')
 
     while iterDirs.hasNext():
 
